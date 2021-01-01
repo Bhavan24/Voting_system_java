@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="340.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.AddCandidates">
+    <children>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="400.0" styleClass="btn" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CANDIDATE DETAILS">
+                    <font>
+                        <Font name="Century" size="30.0" />
+                    </font>
+                </Text>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID" textAlignment="CENTER" wrappingWidth="102.13671875">
+                            <font>
+                                <Font name="Century Gothic" size="21.0" />
+                            </font>
+                        </Text>
+                        <JFXTextField fx:id="txtId" prefHeight="25.0" prefWidth="358.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="114.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" textAlignment="CENTER" wrappingWidth="102.13671875">
+                            <font>
+                                <Font name="Century Gothic" size="21.0" />
+                            </font>
+                        </Text>
+                        <JFXTextField fx:id="txtName" prefHeight="25.0" prefWidth="358.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="17.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="89.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY" textAlignment="CENTER" wrappingWidth="102.13671875">
+                            <font>
+                                <Font name="Century Gothic" size="21.0" />
+                            </font>
+                        </Text>
+                        <JFXTextField fx:id="txtParty" prefHeight="25.0" prefWidth="358.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="17.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="62.0" prefWidth="384.0">
+                    <VBox.margin>
+                        <Insets top="25.0" />
+                    </VBox.margin>
+                    <children>
+                        <JFXButton fx:id="addBtn" onAction="#add" prefHeight="45.0" prefWidth="160.0" styleClass="greenBtn" stylesheets="@../CSS/stylesheet.css" text="Add">
+                            <HBox.margin>
+                                <Insets right="8.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Century Gothic" size="24.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton layoutX="132.0" layoutY="19.0" onAction="#clear" prefHeight="45.0" prefWidth="160.0" styleClass="clean" stylesheets="@../CSS/stylesheet.css" text="Clear">
+                            <HBox.margin>
+                                <Insets left="8.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Century Gothic" size="24.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

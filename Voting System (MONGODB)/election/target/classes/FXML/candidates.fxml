@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="635.0" maxWidth="855.0" prefHeight="635.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.CandidatesController">
+   <children>
+      <TableView fx:id="candidateTable" layoutX="43.0" layoutY="82.0" prefHeight="520.0" prefWidth="771.0" stylesheets="@../CSS/stylesheet.css">
+        <columns>
+          <TableColumn fx:id="idColumnCandidate" prefWidth="161.0" style="-fx-alignment: center;" text="CANDIDATE ID" />
+          <TableColumn fx:id="nameColumnCandidate" prefWidth="346.0" style="-fx-alignment: center;" text="CANDIDATE NAME" />
+            <TableColumn fx:id="partyColumnCandidate" prefWidth="263.0" style="-fx-alignment: center;" text="CANDIDATE PARTY" />
+        </columns>
+      </TableView>
+       <Group layoutX="43.0" layoutY="24.0">
+           <children>
+               <Button layoutX="100.0" mnemonicParsing="false" onAction="#editCandidate" prefHeight="50.0" prefWidth="50.0" styleClass="editBtn" stylesheets="@../CSS/stylesheet.css">
+               <tooltip>
+                  <Tooltip text="Edit Candidate" />
+               </tooltip></Button>
+               <Button layoutX="200.0" mnemonicParsing="false" onAction="#deleteCandidate" prefHeight="50.0" prefWidth="50.0" styleClass="deleteBtn" stylesheets="@../CSS/stylesheet.css">
+               <tooltip>
+                  <Tooltip text="Delete Candidate" />
+               </tooltip></Button>
+            <Button mnemonicParsing="false" onAction="#addCandidate" prefHeight="50.0" prefWidth="50.0" styleClass="addBtn" stylesheets="@../CSS/stylesheet.css">
+               <tooltip>
+                  <Tooltip text="Add Candidate" />
+               </tooltip></Button>
+            <Button layoutX="300.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="50.0" prefWidth="50.0" styleClass="refresh" stylesheets="@../CSS/stylesheet.css">
+               <tooltip>
+                  <Tooltip text="Refresh Table" />
+               </tooltip></Button>
+           </children>
+       </Group>
+   </children>
+</AnchorPane>

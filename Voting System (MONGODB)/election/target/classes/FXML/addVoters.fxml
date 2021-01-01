@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.AddVoters">
+    <children>
+        <Pane prefHeight="492.0" prefWidth="550.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Text layoutX="148.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VOTER DETAILS">
+                    <font>
+                        <Font name="Century" size="30.0" />
+                    </font>
+                </Text>
+                <HBox alignment="CENTER" layoutX="15.0" layoutY="429.0" prefHeight="50.0" prefWidth="520.0">
+                    <children>
+                        <JFXButton fx:id="addBtn" onAction="#add" prefHeight="45.0" prefWidth="160.0" styleClass="greenBtn" stylesheets="@../CSS/stylesheet.css" text="Add">
+                            <HBox.margin>
+                                <Insets right="8.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Century Gothic" size="24.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton layoutX="132.0" layoutY="19.0" onAction="#clear" prefHeight="45.0" prefWidth="160.0" styleClass="clean" stylesheets="@../CSS/stylesheet.css" text="Clear">
+                            <HBox.margin>
+                                <Insets left="8.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Century Gothic" size="24.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="366.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="158.0" text="DOB">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="txtDOB" prefHeight="40.0" prefWidth="360.0" styleClass="jfx-date-picker" stylesheets="@../CSS/stylesheet.css" />
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="72.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="155.0" text="VOTER ID">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtVoterId" prefHeight="40.0" prefWidth="360.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="127.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="155.0" text="FIRST NAME">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtFirstName" prefHeight="40.0" prefWidth="360.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="184.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="155.0" text="LAST NAME">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtLastName" prefHeight="40.0" prefWidth="360.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="23.0" layoutY="306.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="155.0" text="ADDRESS">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtAddress" prefHeight="40.0" prefWidth="360.0" style="-fx-alignment: center;">
+                            <font>
+                                <Font name="Century Gothic" size="20.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="20.0" layoutY="248.0" prefHeight="40.0" prefWidth="520.0">
+                    <children>
+                        <Label prefHeight="40.0" prefWidth="155.0" text="GENDER">
+                            <font>
+                                <Font name="Century Gothic" size="28.0" />
+                            </font>
+                        </Label>
+                  <JFXTextField fx:id="txtGender" prefHeight="40.0" prefWidth="360.0" style="-fx-alignment: center;">
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
