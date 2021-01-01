@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.EditCandidates">
+   <children>
+      <Pane prefHeight="289.0" prefWidth="461.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+                <Text layoutX="32.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CANDIDATE DETAILS">
+                    <font>
+                        <Font name="Century" size="30.0" />
+                    </font>
+                </Text>
+              <HBox alignment="CENTER" layoutX="10.0" layoutY="81.0" prefHeight="39.0" prefWidth="384.0">
+                  <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" textAlignment="CENTER" wrappingWidth="102.13671875">
+                          <font>
+                              <Font name="Century Gothic" size="21.0" />
+                          </font>
+                      </Text>
+                      <JFXTextField fx:id="txtName" prefHeight="39.0" prefWidth="277.0" style="-fx-alignment: center;">
+                          <font>
+                              <Font name="Century Gothic" size="20.0" />
+                          </font>
+                      </JFXTextField>
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER" layoutX="5.0" layoutY="134.0" prefHeight="39.0" prefWidth="384.0">
+                  <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PARTY" textAlignment="CENTER" wrappingWidth="102.13671875">
+                          <font>
+                              <Font name="Century Gothic" size="21.0" />
+                          </font>
+                      </Text>
+                      <JFXTextField fx:id="txtParty" prefHeight="25.0" prefWidth="281.0" style="-fx-alignment: center;">
+                          <font>
+                              <Font name="Century Gothic" size="20.0" />
+                          </font>
+                      </JFXTextField>
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER" layoutX="5.0" layoutY="211.0" prefHeight="62.0" prefWidth="384.0">
+                  <children>
+                      <JFXButton fx:id="editBtn" onAction="#edit" prefHeight="45.0" prefWidth="160.0" styleClass="greenBtn" stylesheets="@../CSS/stylesheet.css" text="Edit">
+                          <HBox.margin>
+                              <Insets right="8.0" />
+                          </HBox.margin>
+                          <font>
+                              <Font name="Century Gothic" size="24.0" />
+                          </font>
+                      </JFXButton>
+                      <JFXButton layoutX="132.0" layoutY="19.0" onAction="#clear" prefHeight="45.0" prefWidth="160.0" styleClass="clean" stylesheets="@../CSS/stylesheet.css" text="Clean">
+                          <HBox.margin>
+                              <Insets left="8.0" />
+                          </HBox.margin>
+                          <font>
+                              <Font name="Century Gothic" size="24.0" />
+                          </font>
+                      </JFXButton>
+                  </children>
+              </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="635.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.ResultController">
+    <children>
+        <TableView fx:id="resultTable" layoutX="66.0" layoutY="25.0" prefHeight="518.0" prefWidth="500.0" stylesheets="@../CSS/stylesheet.css">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="349.0" style="-fx-alignment: center;" text="CANDIDATE NAME" />
+                <TableColumn fx:id="votesColumn" prefWidth="149.0" style="-fx-alignment: center;" text="VOTES" />
+            </columns>
+        </TableView>
+      <Label fx:id="lblWinner" layoutX="435.0" layoutY="553.0" prefHeight="48.0" prefWidth="657.0" style="-fx-alignment: center;" text="winner" textAlignment="CENTER" textFill="#ff005e">
+         <font>
+            <Font name="Times New Roman" size="42.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="651.0" layoutY="84.0" style="-fx-background-color: rgb(241, 241, 241, 0.6); -fx-background-radius: 25;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpaneF" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDirectory.Controllers.Options">
+    <center>
+        <AnchorPane prefHeight="635.0" prefWidth="1200.0">
+            <children>
+                <AnchorPane maxHeight="635.0" maxWidth="345.0" prefHeight="635.0" prefWidth="345.0" style="-fx-background-color: #02365D;">
+                    <children>
+                        <VBox layoutY="216.0" prefHeight="226.0" prefWidth="308.0" spacing="5.0">
+                            <children>
+                                <HBox prefHeight="50.0" prefWidth="345.0" styleClass="hBoxStyle" stylesheets="@../CSS/stylesheet.css">
+                                    <children>
+                                        <Group>
+                                            <children>
+                                                <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Resources/candidates.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="candidatesOptionBtn" layoutX="50.0" onAction="#candidates" prefHeight="50.0" prefWidth="289.0" styleClass="jfx-button" stylesheets="@../CSS/stylesheet.css" text="  CANDIDATES" textFill="#0898ff">
+                                                    <font>
+                                                        <Font name="Corbel" size="25.0" />
+                                                    </font>
+                                                </JFXButton>
+                                            </children>
+                                        </Group>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="50.0" prefWidth="345.0" styleClass="hBoxStyle" stylesheets="@../CSS/stylesheet.css">
+                                    <children>
+                                        <Group>
+                                            <children>
+                                                <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Resources/voters.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="votersOptionBtn" layoutX="50.0" onAction="#voters" prefHeight="50.0" prefWidth="290.0" styleClass="jfx-button" stylesheets="@../CSS/stylesheet.css" text="  VOTERS" textFill="#0898ff">
+                                                    <font>
+                                                        <Font name="Corbel" size="25.0" />
+                                                    </font>
+                                                </JFXButton>
+                                            </children>
+                                        </Group>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="50.0" prefWidth="275.0" styleClass="hBoxStyle" stylesheets="@../CSS/stylesheet.css">
+                                    <children>
+                                        <Group>
+                                            <children>
+                                                <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Resources/start.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="startVotingBtn" layoutX="50.0" onAction="#startVoting" prefHeight="50.0" prefWidth="290.0" styleClass="jfx-button" stylesheets="@../CSS/stylesheet.css" text="  START VOTING" textFill="#0898ff">
+                                                    <font>
+                                                        <Font name="Corbel" size="25.0" />
+                                                    </font>
+                                                </JFXButton>
+                                            </children>
+                                        </Group>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="50.0" prefWidth="302.0" styleClass="hBoxStyle" stylesheets="@../CSS/stylesheet.css">
+                                    <children>
+                                        <Group>
+                                            <children>
+                                                <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Resources/end.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <JFXButton fx:id="endVotingBtn" layoutX="50.0" onAction="#endVoting" prefHeight="50.0" prefWidth="290.0" styleClass="jfx-button" stylesheets="@../CSS/stylesheet.css" text="  END VOTING" textFill="#0898ff">
+                                                    <font>
+                                                        <Font name="Corbel" size="25.0" />
+                                                    </font>
+                                                </JFXButton>
+                                            </children>
+                                        </Group>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <JFXTextField fx:id="txtUsername" layoutX="73.0" layoutY="39.0" prefHeight="50.0" prefWidth="200.0" promptText="USERNAME" style="-fx-alignment: center;" unFocusColor="#f40e4d">
+                            <font>
+                                <Font name="Consolas" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="txtPassword" layoutX="73.0" layoutY="89.0" prefHeight="50.0" prefWidth="200.0" promptText="PASSWORD" style="-fx-alignment: center;" unFocusColor="#f40e4d">
+                            <font>
+                                <Font name="Consolas" size="15.0" />
+                            </font>
+                        </JFXPasswordField>
+                        <Separator layoutX="-1.0" layoutY="-1.0" prefHeight="2.0" prefWidth="345.0" />
+                        <VBox layoutY="7.0" prefHeight="32.0" prefWidth="345.0">
+                            <children>
+                                <Label prefHeight="50.0" prefWidth="345.0" text="             ADMIN OPTIONS" textAlignment="CENTER" textFill="#ff0808">
+                                    <font>
+                                        <Font name="Century Gothic" size="23.0" />
+                                    </font>
+                                </Label>
+                                <Separator opacity="0.26" prefWidth="250.0" />
+                            </children>
+                        </VBox>
+                        <JFXTextField fx:id="txtVoterId" layoutX="71.0" layoutY="511.0" prefHeight="50.0" prefWidth="200.0" promptText="VOTER ID" style="-fx-alignment: center;" unFocusColor="#f40e4d">
+                            <font>
+                                <Font name="Consolas" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                        <VBox layoutY="457.0" prefHeight="43.0" prefWidth="345.0">
+                            <children>
+                                <Separator maxWidth="362.0" opacity="0.26" prefHeight="0.0" prefWidth="327.0" />
+                                <Label prefHeight="38.0" prefWidth="345.0" text="              VOTER OPTIONS" textAlignment="CENTER" textFill="RED">
+                                    <font>
+                                        <Font name="Century Gothic" size="23.0" />
+                                    </font>
+                                </Label>
+                                <Separator maxWidth="362.0" opacity="0.26" prefHeight="0.0" prefWidth="327.0" />
+                            </children>
+                        </VBox>
+                        <Button fx:id="adminLoginBtn" layoutX="117.0" layoutY="153.0" mnemonicParsing="false" onAction="#checkLoginAdmin" prefHeight="34.0" prefWidth="107.0" styleClass="buttonRed" stylesheets="@../CSS/stylesheet.css" text="LOG IN">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="voteBtn" layoutX="117.0" layoutY="575.0" mnemonicParsing="false" onAction="#checkVoterLogin" prefHeight="34.0" prefWidth="107.0" styleClass="buttonRed" stylesheets="@../CSS/stylesheet.css" text="VOTE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator layoutY="200.0" opacity="0.1" prefHeight="1.0" prefWidth="345.0" />
+                    </children>
+                </AnchorPane>
+                <BorderPane fx:id="borderpane1" layoutX="345.0" maxHeight="635.0" prefHeight="635.0" prefWidth="855.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

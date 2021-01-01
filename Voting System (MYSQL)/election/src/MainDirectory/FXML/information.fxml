@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="635.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="100.0" endY="-22.0" layoutX="500.0" layoutY="56.0" startX="100.0" startY="545.0" stroke="#b9b1b1" strokeDashOffset="2.0" />
+      <Pane layoutX="68.0" layoutY="34.0" prefHeight="155.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="ADMIN OPTIONS:" textFill="#f40e4d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="30.0" text="&gt; ENTER YOUR USERNAME AND PASSWORD TO LOGIN TO THE APPLICATION&#10;&#10;&gt; UNTIL YOU LOGIN, THE ADMIN CONTROLS ARE DISABLED&#10;&#10;&gt; AFTER YOU LOGIN AS ADMIN YOU CAN USE THE ADMIN CONTROLS&#10;   (CANDIDATES,VOTERS,STARTVOTING)" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="661.0" layoutY="222.0" prefHeight="155.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="24.0" prefHeight="111.0" prefWidth="457.0" text="&gt;ENTER YOUR VOTER ID AND CLICK ON &quot;VOTE&quot; TO PROCEED WITH THE VOTING&#10;&#10;&gt;WHEN THE CANDIDATE LIST APPEARS, CLICK ON THE CANDIDATE YOU WANT TO VOTE AND THEN CLICK ON THE VOTING BUTTON &#10;&#10;&gt; YOU CAN'T VOTE WITH THE SAME VOTER ID TWICE" textFill="WHITE" wrapText="true" />
+            <Label layoutX="14.0" layoutY="4.0" text="VOTER OPTION:" textFill="#ff95b3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="205.0" prefHeight="163.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="CANDIDATE:" textFill="#f40e4d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="24.0" prefHeight="133.0" prefWidth="385.0" text="&gt; CLICK THE CANDIDATE BUTTON ON ADMIN OPTIONS&#10;&#10;&gt; CANDIDATE TABLE WILL APPEAR &#10;&#10;&gt; WITH THE BUTTONS YOU CAN ADD/ EDIT/ DELETE CANDIDATES&#10;&#10;&gt; ALWAYS REFRESH THE TABLE AFTER PERFORMING AN ACTION" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="68.0" layoutY="386.0" prefHeight="226.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="VOTERS:" textFill="#f40e4d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="24.0" prefHeight="191.0" prefWidth="450.0" text="&gt; CLICK THE VOTERS BUTTON ON ADMIN OPTIONS&#10;&#10;&gt; VOTERS TABLE WILL APPEAR WITHOUT DATA &#10;&#10;&gt; YOU NEED TO ADD YOUR CSV FILE CONTAINING VOTERS &#10;CSV FILE IS AVAILABLE ON THE DATABASE FOLDER&#10;&#10;&gt; WITH THE BUTTONS YOU CAN ADD/ EDIT/ DELETE VOTERS&#10;&#10;&gt; ALWAYS REFRESH THE TABLE AFTER PERFORMING AN ACTION" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="661.0" layoutY="34.0" prefHeight="178.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="START / END VOTING:" textFill="#f40e4d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="155.0" prefWidth="450.0" text="&gt; WHEN YOU CLICK ON THE START VOTING BUTTON &#10;    OTHER ADMIN CONTROLS WILL BE DISABLED(EXCEPT &quot;END VOTING&quot;)&#10;&#10;&gt; NOW VOTER CAN VOTE USING VOTER ID &#10;(VOTER CAN'T USE THE ADMIN CONTROLS)&#10;&#10;&gt; AFTER FINISHING THE VOTING. LOGIN AGAIN AND CLICK ON THE &#10;END VOTING BUTTON TO VIEW THE RESULT" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="661.0" layoutY="386.0" prefHeight="226.0" prefWidth="472.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="30.0" prefHeight="178.0" prefWidth="457.0" text="&gt; PLEASE MAKE SURE TO MAKE A DATABASE USING THE SQL FILE&#10;    (SQL FILE IS AVAILABLE ON THE DATABASE FOLDER)&#10;&#10;&gt; ADD EXTERNAL LIBRARIES TO YOUR PROJECT (JAVAFX / J CONNECTOR / JFOENIX)&#10;J CONNECTOR &amp; JFOENIX ARE AVAILABLE ON LIBRARIES FOLDER &#10;&#10;&gt; KINDLY REFER TO THE README FILE IF YOU FACE ANY ISSUES &#10;&#10;&gt; CLICK ON &quot;GET STARTED&quot; TO BEGIN THE PROGRAM" textFill="WHITE" wrapText="true" />
+            <Label layoutX="14.0" layoutY="4.0" text="BEFORE RUNNING THE APPLICATION:" textFill="#5ecf5b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

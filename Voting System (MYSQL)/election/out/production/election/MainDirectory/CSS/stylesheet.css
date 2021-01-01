@@ -1,0 +1,238 @@
+/* Background of welcome screen */
+.imageBG {
+    -fx-background-image:url('/MainDirectory/Resources/bgImage.png');
+    -fx-background-size: 100% 100%;
+}
+/* This class is for all text field input */
+.text-input {
+    -fx-text-fill : #fff;
+}
+/* This class is for HorizontalBoxes in welcome screen */
+.hBoxStyle {
+    -fx-border-width:  0 0 0 5px;
+    -fx-border-color: #F40E4D;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+}
+.hBoxStyle:hover {
+    -fx-background-color: rgb(20, 24, 40);
+    -fx-border-radius: 0;
+}
+.hBoxStyle:pressed {
+    -fx-background-color: #F40E4D;
+    -fx-border-radius: 0;
+}
+/* This class is for all tableviews */
+.table-view {
+    -fx-background-color:#47A4E9;
+    -fx-background-radius:0;
+}
+.table-view .column-header-background {
+    -fx-background-color: #47A4E9;
+    -fx-background-radius:14;
+    -fx-background-insets: 0 0 10 0;
+    -fx-alignment: center;
+}
+.table-view .column-header, .table-view .filler{
+    -fx-size:50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:transparent;
+    -fx-alignment: center;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white ;
+    -fx-alignment: center;
+}
+.table-row-cell {
+    -fx-cell-size: 50px;
+}
+/* This class is for all Jfoenix buttons */
+.jfx-button{
+    -fx-background-color: transparent;
+    -fx-alignment: center-left;
+    -fx-border-radius: 0;
+}
+.jfx-button:hover {
+    -fx-background-color: rgb(20, 24, 40);
+    -fx-border-radius: 0;
+}
+.jfx-button:pressed {
+    -fx-background-color: #F40E4D;
+    -fx-border-radius: 0;
+}
+/* Button style for GetStarted, Login, vote Buttons */
+.buttonRed {
+    -fx-background-color :  rgb(244, 14, 77);
+    -fx-background-radius :  40;
+    -fx-alignment: center;
+}
+.buttonRed:hover {
+    -fx-background-color : linear-gradient(to top left, #2EF3D3, #B13BE0);
+    -fx-background-radius :  40;
+    -fx-alignment: center;
+}
+.buttonRed:pressed {
+    -fx-background-color :  rgb(244, 14, 77);
+    -fx-background-radius :  40;
+    -fx-alignment: center;
+}
+/* Button style for close(exit) Button */
+.close{
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+    -fx-background-radius : 0;
+}
+.close:hover {
+    -fx-text-alignment: center;
+    -fx-background-color : rgb(192, 21, 57);
+    -fx-background-radius : 0;
+}
+.close:pressed {
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+    -fx-background-radius : 0;
+}
+/* Button style for information Button */
+.information {
+    -fx-background-image:url('/MainDirectory/Resources/info.png');
+	-fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+.information:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  50;
+}
+.information:pressed {
+	-fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for refresh table Button */
+.refresh {
+    -fx-background-image:url('/MainDirectory/Resources/refresh.png');
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+.refresh:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  10;
+    -fx-background-size: 100% 100%;
+}
+.refresh:pressed {
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for save(add) details Button */
+.greenBtn {
+    -fx-background-color:  #00E676;
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+.greenBtn:hover {
+    -fx-background-color: #2EF3D3;
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+.greenBtn:pressed {
+    -fx-background-color:  #00E676;
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+/* Button style for clean details Button */
+.clean{
+    -fx-background-color:  rgb(253, 245, 0);
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+.clean:hover {
+    -fx-background-color: #2EF3D3;
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+.clean:pressed {
+    -fx-background-color: rgb(253, 245, 0);
+    -fx-background-radius :  10;
+    -fx-alignment: center;
+}
+/* Button style for import Voter Button */
+.importBtn {
+    -fx-background-image:url('/MainDirectory/Resources/import.png');
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+.importBtn:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  10;
+    -fx-background-size: 100% 100%;
+}
+.importBtn:pressed {
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for add Buttons */
+.addBtn {
+    -fx-background-image:url('/MainDirectory/Resources/add.png');
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+.addBtn:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  10;
+    -fx-background-size: 100% 100%;
+}
+.addBtn:pressed {
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for edit Buttons */
+.editBtn {
+    -fx-background-image:url('/MainDirectory/Resources/update.png');
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+.editBtn:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  10;
+    -fx-background-size: 100% 100%;
+}
+.editBtn:pressed {
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for delete Buttons */
+.deleteBtn {
+    -fx-background-image:url('/MainDirectory/Resources/delete.png');
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+.deleteBtn:hover {
+    -fx-background-color : rgb(51, 122, 174);
+    -fx-background-radius :  10;
+    -fx-background-size: 100% 100%;
+}
+.deleteBtn:pressed {
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
+/* Button style for vote Button*/
+.addVoteBtn {
+    -fx-background-image:url("/MainDirectory/Resources/vote.png");
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+    -fx-border-style: solid;
+    -fx-border-radius: 12;
+    -fx-border-insets: -5;
+    -fx-border-color: linear-gradient(rgb(0, 207, 249), rgb(244, 14, 77));
+}
+.addVoteBtn:hover {
+    -fx-background-color : linear-gradient(rgb(0, 207, 249), rgb(244, 14, 77));
+    -fx-background-radius :  12;
+    -fx-border-style: solid;
+    -fx-border-radius: 12;
+    -fx-border-insets: -5;
+    -fx-border-color: linear-gradient(rgb(0, 207, 249), rgb(244, 14, 77));
+}
+.addVoteBtn:pressed {
+    -fx-background-image:url("/MainDirectory/Resources/vote.png");
+    -fx-background-color : transparent;
+    -fx-background-size: 100% 100%;
+}
